@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: error-check 
+  janus-idp.io/tekton: error-check
+  backstage.io/kubernetes-id: error-check
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: error-check
+resources: 
+- application-dev.yaml 
+- application-stage.yaml 
+- application-prod.yaml  

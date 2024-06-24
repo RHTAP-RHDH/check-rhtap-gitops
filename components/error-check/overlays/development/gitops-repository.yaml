@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: error-check-gitops-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/check-rhtap-gitops
